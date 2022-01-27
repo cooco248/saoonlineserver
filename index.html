@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="./style.css">
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+<html>
+    <head style="font-family: sp-med;"> <!--네비게이션 바-->
+        <meta name="viewport" content="initial-scale=0.7, maximum-scale=4.0, minimum-scale=0.5, user-scalable=no" />
+            <nav class="">
+            <div class="flex justify-between items-center bg-white py-6 lg:px-10 md:px-20 px-10 shadow-xl">
+                <div class="">
+                <a href="#"><img class="h-10 cursor-pointer" src="" alt="" /></a>
+                </div>
+                <ul class="lg:flex hidden items-center space-x-10">
+                <li class="text-lg font-semibold hover:text-red-500 transition duration-200 cursor-pointer ">Home</li> <!--text-->
+                <li class="text-lg font-semibold hover:text-red-500 transition duration-200 cursor-pointer">Server</li> <!--text-->
+                <li class="text-lg font-semibold hover:text-red-500 transition duration-200 cursor-pointer">Ivent</li> <!--text-->
+                <li class="text-lg font-semibold hover:text-red-500 transition duration-200 cursor-pointer">Support</li> <!--text-->
+                <button class="button-in w-40 h-10 shadow-xl rounded-full bg-gradient-to-r from-indigo-500 to-pink-500" style="text-align: center;">
+                    <div style="margin-top: 0%;">
+                        <span style="font-family: sp-bold; color: white;" >접속하기</span> <!--버튼-->
+                    </div>
+                </button>
+                </ul>
+                <div class="lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                </div>
+            </div>
+        </nav>
+        <div class="slideshow-container">
+            <!--이미지 슬라이드-->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="./asset/img/1.png" style="width:100%">
+                
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="./asset/img/2.png" style="width:100%">  
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="./asset/img/3.png" style="width:100%">
+            </div>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+            <!-- 이미지 슬라이드 script 부-->
+            <script> 
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 5000); // Change image every 2 seconds
+            }
+            </script>
+    </head>
+
+    <body>
+        
+        <div> <!--카드-->
+            <div class="w-64 h-full shadow-2xl rounded-2xl bg-white slide-right fll mt-10">
+                <div style="margin-left: 10px;">
+                    <br>
+                    <div style="text-align: center;">
+                        <span style="font-family: sp-bold; font-size: 30pt;">
+                            소식✉
+                        </span>
+                    </div>
+                    <div style="margin-top: 2%;">
+                        <hr>
+                    </div>
+                    <span style="font-family: sp-light; font-size: 15px;">
+                    1/14 | 오픈
+                    </span>
+                    <div style="margin-top: 2%;">
+                        <hr>
+                    </div>
+                    
+                    <span style="font-family: sp-light; font-size: 15px;">
+                    1/28 | 아이템 강화 확률 조정
+                    </span>
+                    <div style="margin-top: 2%;">
+                        <hr>
+                    </div>
+                    
+                    <span style="font-family: sp-light; font-size: 15px;">
+                        2/2 | 치장 아이템 추가
+                    </span>
+                    <div style="margin-top: 2%;">
+                        <hr>
+                    </div>
+                    
+                    <span style="font-family: sp-light; font-size: 15px;">
+                        2/15 | 스폰 재건축
+                    </span>
+                    <div style="margin-top: 2%;">
+                        <hr>
+                    </div>
+                    
+                    <span style="font-family: sp-light; font-size: 15px;">
+                    3/1 | 3:1절 기념 이벤트
+                    </span>
+                    <div style="margin-top: 2%;">
+                        <hr>
+                    </div>
+                    
+                    <span style="font-family: sp-light; font-size: 15px;">
+                    3/7 | 서버 외곽 재공사
+                    </span>
+                    <p>&nbsp;</p>
+                </div>
+            </div>
+            <div class="w-64 h-full shadow-2xl rounded-2xl bg-white slide-right fll mt-10">
+                <div style="margin-left: 10px;">
+                    <br>
+                    <div style="text-align: center;">
+                        <span style="font-family: sp-bold; font-size: 30pt;">
+                    
+                            Event🎉
+                        </span>
+                    </div>
+                    <div style="margin-top: 2%;">
+                        <hr>
+                    </div>
+                    <span style="font-family: sp-light; font-size: 15px;">
+                    1/14 | 오픈
+        
+                    </span>
+                    <div style="margin-top: 2%;">
+                        <hr>
+                    </div>
+                    
+                    <span style="font-family: sp-light; font-size: 15px;">
+                    1/28 | 아이템 강화 확률 조정
+                    </span>
+                    <div style="margin-top: 2%;">
+                        <hr>
+                    </div>
+                    
+                    <span style="font-family: sp-light; font-size: 15px;">
+                    2/2 | 치장 아이템 추가
+        
+                    </span>
+                    <div style="margin-top: 2%;">
+                        <hr>
+                    </div>
+                    
+                    <span style="font-family: sp-light; font-size: 15px;">
+                    2/15 | 스폰 재건축
+        
+                    </span>
+                    <div style="margin-top: 2%;">
+                        <hr>
+                    </div>
+                    
+                    <span style="font-family: sp-light; font-size: 15px;">
+                    3/1 | 3:1절 기념 이벤트
+        
+                    </span>
+                    <div style="margin-top: 2%;">
+                        <hr>
+                    </div>
+                    
+                    <span style="font-family: sp-light; font-size: 15px;">
+                    3/7 | 서버 외곽 재공사
+        
+                    </span>
+                    
+                    
+                    <p>&nbsp;</p>
+                    
+        
+        
+                </div>
+                
+            </div>
+            <div class="w-64 h-full shadow-2xl rounded-2xl bg-white slide-right fll mt-10">
+                <div style="margin-left: 10px;">
+                    <br>
+                    <div style="text-align: center;">
+                        <span style="font-family: sp-bold; font-size: 30pt;">
+                    
+                            공지🎯
+                        </span>
+                    </div>
+                    <div style="margin-top: 2%;">
+                        <hr>
+                    </div>
+                    <span style="font-family: sp-light; font-size: 15px;">
+                    1/14 | 오픈
+        
+                    </span>
+                    <div style="margin-top: 2%;">
+                        <hr>
+                    </div>
+                    
+                    <span style="font-family: sp-light; font-size: 15px;">
+                    1/28 | 아이템 강화 확률 조정
+                    </span>
+                    <div style="margin-top: 2%;">
+                        <hr>
+                    </div>
+                    
+                    <span style="font-family: sp-light; font-size: 15px;">
+                    2/2 | 치장 아이템 추가
+        
+                    </span>
+                    <div style="margin-top: 2%;">
+                        <hr>
+                    </div>
+                    
+                    <span style="font-family: sp-light; font-size: 15px;">
+                    2/15 | 스폰 재건축
+        
+                    </span>
+                    <div style="margin-top: 2%;">
+                        <hr>
+                    </div>
+                    
+                    <span style="font-family: sp-light; font-size: 15px;">
+                    3/1 | 3:1절 기념 이벤트
+        
+                    </span>
+                    <div style="margin-top: 2%;">
+                        <hr>
+                    </div>
+                    
+                    <span style="font-family: sp-light; font-size: 15px;">
+                    3/7 | 서버 외곽 재공사
+        
+                    </span>
+                    
+                    
+                    <p>&nbsp;</p>
+                    
+        
+        
+                </div>
+                
+            </div>
+            <div class="w-64 h-full shadow-2xl rounded-2xl bg-white slide-right fll mt-10" >
+                <div style="margin-left: 10px;">
+                    <br>
+                    <div style="text-align: center;">
+                        <span style="font-family: sp-bold; font-size: 30pt;">
+                    
+                            게시판📚
+                        </span>
+                    </div>
+                    <div style="margin-top: 2%;">
+                        <hr>
+                    </div>
+                    <span style="font-family: sp-light; font-size: 15px;">
+                    1/14 | 오픈
+        
+                    </span>
+                    <div style="margin-top: 2%;">
+                        <hr>
+                    </div>
+                    
+                    <span style="font-family: sp-light; font-size: 15px;">
+                    1/28 | 아이템 강화 확률 조정
+                    </span>
+                    <div style="margin-top: 2%;">
+                        <hr>
+                    </div>
+                    
+                    <span style="font-family: sp-light; font-size: 15px;">
+                    2/2 | 치장 아이템 추가
+        
+                    </span>
+                    <div style="margin-top: 2%;">
+                        <hr>
+                    </div>
+                    
+                    <span style="font-family: sp-light; font-size: 15px;">
+                    2/15 | 스폰 재건축
+        
+                    </span>
+                    <div style="margin-top: 2%;">
+                        <hr>
+                    </div>
+                    
+                    <span style="font-family: sp-light; font-size: 15px;">
+                    3/1 | 3:1절 기념 이벤트
+        
+                    </span>
+                    <div style="margin-top: 2%;">
+                        <hr>
+                    </div>
+                    
+                    <span style="font-family: sp-light; font-size: 15px;">
+                    3/7 | 서버 외곽 재공사
+                    </span>
+                    <p>&nbsp;</p>
+                </div>
+            </div>
+            </div>
+            <style>
+            @media ( max-width: 768px ) {
+                flo{
+                    display: inline-block;
+                }
+            }
+            fll{
+                float: left;
+            }
+            
+            .slide-right {
+                -webkit-animation: slide-right 1.2s cubic-bezier(0.860, 0.000, 0.070, 1.000) both;
+                animation: slide-right 1.2s cubic-bezier(0.860, 0.000, 0.070, 1.000) both;
+            }
+        
+            @-webkit-keyframes slide-right {
+                0% {
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+            }
+            100% {
+                -webkit-transform: translateX(100px);
+                transform: translateX(100px);
+            }
+            }
+            @keyframes slide-right {
+                0% {
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+            }
+            100% {
+                -webkit-transform: translateX(100px);
+                transform: translateX(100px);
+            }
+            }
+            body {
+                font-family: 'sp-light';  
+            }
+            
+            @font-face { 
+                font-family: 'sp-bold';
+                src: url('./asset/font/SpoqaHanSansNeo-Bold.ttf') format('truetype');
+            }
+
+            @font-face {
+                font-family: 'sp-light';
+                src: url('./asset/font/SpoqaHanSansNeo-Light.ttf') format('truetype');
+            }
+
+            @font-face {
+                font-family: 'sp-med';
+                src: url('./asset/font/SpoqaHanSansNeo-Medium.ttf') format('truetype');
+            }
+            
+
+            @font-face {
+                font-family: 'sp-reg';
+                src: url('./asset/font/SpoqaHanSansNeo-Reguler.ttf') format('truetype');
+            }
+
+            @font-face {
+                font-family: 'sp-thin';
+                src: url('./asset/font/SpoqaHanSansNeo-Thin.ttf') format('truetype');
+            }
+        </style>
+    </body>
+</html>

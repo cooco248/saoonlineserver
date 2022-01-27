@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./asset/css/fullpage.css" />
+<link rel="stylesheet" type="text/css" href="./asset/css/examples.css" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>SAO Online - intro</title>
+    <meta name="author" content="Matthew Howell" />
+    <meta name="description" content="fullPage continuous scrolling demo." />
+    <meta name="keywords"  content="fullpage,jquery,demo,scroll,loop,continuous" />
+    <meta name="Resource-type" content="Document" />
+</head>
+
+<body>
+
+<div id="fullpage">
+    <div class="section first bg-gradient-to-r from-pink-400 to-blue-500 text-animation"  id="section0">
+        <h1 style="font-family: sp-bold;">SAO Online</h1>
+        <span style="font-family: sp-light; font-size: 50px;">The Minecraft Server.</span>
+    </div>
+
+    <div class="section active bg-white" id="section1">
+        
+        <div class="slide active bg-gradient-to-r from-green-400 to-indigo-500" id="slide2">
+            <div class="text-fade">
+                <h1 style="font-family: sp-bold;" class="text-transparent text-8xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">마인크래프트 서버 최초</h1>
+                <p style="font-family: sp-med; font-size: 50px;" class="text-transparent text-8xl bg-clip-text bg-gradient-to-r from-pink-400 to-blue-400">
+                    소드아트 온라인 구현 서버
+                </p>
+                <p style="font-family: sp-light;" class="hover:text-transparent text-8xl bg-clip-text bg-gradient-to-r from-orange-500 to-red-600 duration-300 cursor-pointer">여러 시스템을 애니메이션과 똑같이 구현함으로서, 유저의 재미를 한층 더 올렸습니다.</p>
+            </div>
+        </div>
+        
+        
+
+    </div>
+    <div class="section" id="section2">
+        <div class="intro">
+            <h1 style="font-family: sp-bold; color: white;">놀라운 퀄리티의 서버.</h1>
+            <p style="font-family: sp-med; font-size: 20pt; color: white; margin-top: 3%;">멋지게 만든 지형과 건축물로<br> 더 현실적인 게임 플레이를 하실 수 있습니다.</p>
+            <div>
+                <img src="./asset/img/1.png" width="500" alt="">
+            </div>
+            <p style="font-family: sp-light;"></p>
+        </div>
+    </div>
+    <div class="section" id="slide2">
+        <div class="intro">
+            <h1>slide02</h1>
+        </div>
+    </div>
+    <div class="section" id="section3">
+        <div class="intro">
+            <h1>Secdsa3</h1>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="./asset/js/fullpage.js"></script>
+<script type="text/javascript" src="./asset/js/examples.js"></script>
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+        menu: '#menu',
+        lazyLoad: true
+    });
+</script>
+<style>
+    img { display: block;
+        margin: auto;
+        }
+    @font-face {
+            font-family: 'sp-bold';
+            src: url('./asset/font/SpoqaHanSansNeo-Bold.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'sp-light';
+            src: url('./asset/font/SpoqaHanSansNeo-Light.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'sp-med';
+            src: url('./asset/font/SpoqaHanSansNeo-Medium.ttf') format('truetype');
+        }
+        
+
+        @font-face {
+            font-family: 'sp-reg';
+            src: url('./asset/font/SpoqaHanSansNeo-Reguler.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'sp-thin';
+            src: url('./asset/font/SpoqaHanSansNeo-Thin.ttf') format('truetype');
+        }
+
+</style>
+</body>
+</html>
